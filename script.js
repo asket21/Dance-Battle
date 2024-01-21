@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const startBattleButton = document.getElementById("startBattleButton");
     const closeModalButton = modal1.getElementsByClassName("modal_close-button")[0];
     
-
+    // Функция для получения случайного числа в диапазоне(необходима для реализации случайного фона в батле)
     function randomDigit(minDigit, maxDigit){
         return Math.floor(Math.random()*(maxDigit-minDigit+1) + minDigit);
     }
@@ -53,7 +53,6 @@ document.addEventListener('DOMContentLoaded', () => {
         statsSum += hero.stats.int;
         statsSum += hero.stats.agi;
         statsSum += hero.healthPoints;
-
         return statsSum;
     }
 
